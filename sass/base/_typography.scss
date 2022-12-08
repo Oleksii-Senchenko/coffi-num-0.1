@@ -1,0 +1,36 @@
+.title__text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  color: var(--light-blue-color);
+}
+
+.under_title__text {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: calc(24 / 30);
+  text-align: center;
+  color: var(--light-blue-color);
+}
+.side_section__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: calc(70 / 54);
+  color: #415167;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #232c38;
+  /* хз как цвет назвать */
+}
+
+.features__p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

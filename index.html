@@ -7,110 +7,213 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@300;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,400;0,600;0,700;1,200;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>SweetCoffee</title>
   </head>
   <body>
     <!-- шапув профиля -->
     <header>
-      <nav></nav>
+      <div class="container">
+        <nav></nav>
+      </div>
     </header>
     <!-- menu section -->
-    <section>
-      <h2>TRANG CHỦ</h2>
-      <ul class="menu__list list">
-        <li class="menu__item">
-          <a class="menu__link link" href="">COFFEE</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link link" href=""> PHIN MẠ MÀU </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link link" href="">COMBO PHIN PHÊ</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link link" href="">GIFTSET</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link link" href=""> LIÊN HỆ</a>
-        </li>
-      </ul>
-    </section>
+    <!-- <section>
+      <div class="container">
+        <h2>TRANG CHỦ</h2>
+        <ul class="menu__list list">
+          <li class="menu__item">
+            <a class="menu__link link" href="">COFFEE</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href=""> PHIN MẠ MÀU </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="">COMBO PHIN PHÊ</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href="">GIFTSET</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link link" href=""> LIÊN HỆ</a>
+          </li>
+        </ul>
+      </div>
+    </section> -->
 
     <!-- side left section -->
-    <section class="side_section">
-      <h2 class="side_section__title">
-        YOUR <br />
-        <span class="side_section__sapn">PERSONALIZED</span> <br />
-        COFFEE
-      </h2>
-    </section>
-    <!-- features section -->
-    <main>
-      <section class="features">
-        <h3 class="title__text">Your Personalized Coffee</h3>
-        <h2 class="under_title__text">COFFEE BUILD YOUR BASE</h2>
+    <!-- <section class="side_section">
+      <div class="container">
+        <h2 class="side_section__title">
+          YOUR <br />
+          <span class="side_section__sapn">PERSONALIZED</span> <br />
+          COFFEE
+        </h2>
+      </div>
+    </section> -->
 
-        <ul class="features__list list">
-          <div>
+    <main>
+      <!-- features section -->
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">
+            Your Personalized Coffee <span>COFFEE BUILD YOUR BASE</span>
+          </h2>
+          <ul class="features__list list">
             <li class="features__item">
-              <img src="./immages/feature/feature-1.jpg" alt="" />
-              <h2 class="features__title">Nguồn gốc</h2>
-              <p class="features__p">
+              <img
+                class="features__img"
+                src="./images/feature/feature-1.jpg"
+                alt=""
+              />
+              <h3 class="features__title">Nguồn gốc</h3>
+              <p class="features__description">
                 Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn
                 quốc tế.
               </p>
             </li>
-          </div>
-          <div>
+
             <li class="features__item">
-              <img src="./immages/feature/feature-2.jpg" alt="" />
-              <h2 class="features__title">Chất lượng</h2>
-              <p class="features__p">
+              <img
+                class="features__img"
+                src="./images/feature/feature-2.jpg"
+                alt=""
+              />
+              <h3 class="features__title">Chất lượng</h3>
+              <p class="features__description">
                 Từng một hạt cà phê là cả một quá trình tập trung cao độ của
                 nghệ nhân cà phê.
               </p>
             </li>
-          </div>
-          <div>
+
             <li class="features__item">
-              <img src="./immages/feature/feature-3.jpg" alt="" />
-              <h2 class="features__title">Các loại hạt</h2>
-              <p class="features__p">
+              <img
+                class="features__img"
+                src="./images/feature/feature-3.jpg"
+                alt=""
+              />
+              <h3 class="features__title">Các loại hạt</h3>
+              <p class="features__description">
                 70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green
                 bean.
               </p>
             </li>
-          </div>
-          <div>
+
             <li class="features__item">
-              <img src="./immages/feature/feature-4.jpg" alt=""/>
-              <h2 class="features__title">Pha chế</h2>
-              <p class="features__p">
+              <img
+                class="features__img"
+                src="./images/feature/feature-4.jpg"
+                alt=""
+              />
+              <h3 class="features__title">Pha chế</h3>
+              <p class="features__description">
                 Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và
                 nghiêm ngặt.
               </p>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
 
-      <!-- coffee sale section -->
-      <section class="sale_saction">
-        <h3 class="title__text">Choose Your Favorite</h3>
-        <h2 class="under_title__text">CHUẨN GU ĐÚNG VỊ</h2>
-        <ul class="sale__list list">
-            <li class="sale__item"><img src="./immages/freebie_coffee /image-1.jpg" alt=""></li>
-            <li class="sale__item"><img src="./immages/freebie_coffee /image-2.jpg" alt=""></li>
-            <li class="sale__item"><img src="./immages/freebie_coffee /image-3.jpg" alt=""></li>
-            <li class="sale__item"><img src="./immages/freebie_coffee /image-4.jpg" alt=""></li>
-            <li class="sale__item"><img src="" alt=""></li>
-            <li class="sale__item"><img src="" alt=""></li>
-        </ul>
+      <!-- coffee products section -->
+      <section class="products">
+        <div class="container">
+          <h2 class="products__title">
+            Choose Your Favorite <span>CHUẨN GU ĐÚNG VỊ</span>
+          </h2>
+          <ul class="products__list list">
+            <li class="products__item">
+              <img
+                class="products__img"
+                src="./images/products/image-1.jpg"
+                alt=""
+              />
+
+              <div class="products__block">
+                <p class="products__price">99.000</p>
+                <h3 class="products__name">REVO Morning</h3>
+                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <div class="products__wrapper">
+                  <button class="products__btn">MUA NGAY</button>
+                  <button class="products__more">CHI TIẾT</button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <img
+                class="products__img"
+                src="./images/products/image-2.jpg"
+                alt=""
+              />
+              <div class="products__block">
+                <p class="products__price">99.000</p>
+                <h3 class="products__name">REVO Morning</h3>
+                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <div class="products__wrapper">
+                  <button class="products__btn">MUA NGAY</button>
+                  <button class="products__more">CHI TIẾT</button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <img
+                class="products__img"
+                src="./images/products/image-3.jpg"
+                alt=""
+              />
+              <div class="products__block">
+                <p class="products__price">99.000</p>
+                <h3 class="products__name">REVO Morning</h3>
+                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <div class="products__wrapper">
+                  <button class="products__btn">MUA NGAY</button>
+                  <button class="products__more">CHI TIẾT</button>
+                </div>
+              </div>
+            </li>
+            <li class="products__item">
+              <img
+                class="products__img"
+                src="./images/products/image-4.jpg"
+                alt=""
+              />
+              <div class="products__block">
+                <p class="products__price">99.000</p>
+                <h3 class="products__name">REVO Morning</h3>
+                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <div class="products__wrapper">
+                  <button class="products__btn">MUA NGAY</button>
+                  <button class="products__more">CHI TIẾT</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- gifrset section -->
+      <section class="giftset">
+        <div class="container"></div>
+      </section>
+
+      <!-- comno section -->
+      <section class="combo">
+        <div class="container"></div>
       </section>
     </main>
+    <!-- footer -->
+    <footer>
+      <div class="container"></div>
+    </footer>
   </body>
 </html>
