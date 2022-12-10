@@ -1,3 +1,13 @@
-.features{
-    @extend %section;
+.features {
+  @extend %section;
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 66px;
+}
+
+.features__item {
+  width: calc((100% - 3 * 66px) / 4);
 }

@@ -21,53 +21,47 @@
     <title>SweetCoffee</title>
   </head>
   <body>
-    <!-- шапув профиля -->
+    <!-- шапка профиля -->
     <header>
       <div class="container">
-        <nav></nav>
+        <nav class="nav">
+          <h2>TRANG CHỦ</h2>
+          <ul class="menu__list list">
+            <li class="menu__item">
+              <a class="menu__link link" href="">COFFEE</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href=""> PHIN MẠ MÀU </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">COMBO PHIN PHÊ</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="">GIFTSET</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href=""> LIÊN HỆ</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
-    <!-- menu section -->
-    <!-- <section>
-      <div class="container">
-        <h2>TRANG CHỦ</h2>
-        <ul class="menu__list list">
-          <li class="menu__item">
-            <a class="menu__link link" href="">COFFEE</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href=""> PHIN MẠ MÀU </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="">COMBO PHIN PHÊ</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="">GIFTSET</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href=""> LIÊN HỆ</a>
-          </li>
-        </ul>
-      </div>
-    </section> -->
 
-    <!-- side left section -->
-    <!-- <section class="side_section">
       <div class="container">
         <h2 class="side_section__title">
           YOUR <br />
-          <span class="side_section__sapn">PERSONALIZED</span> <br />
+          <span class="side_section__span">PERSONALIZED</span> <br />
           COFFEE
         </h2>
       </div>
-    </section> -->
+    </header>
 
     <main>
       <!-- features section -->
       <section class="features">
         <div class="container">
           <h2 class="features__title">
-            Your Personalized Coffee <span>COFFEE BUILD YOUR BASE</span>
+            Your Personalized Coffee
+            <span class="under_title__text">COFFEE BUILD YOUR BASE</span>
           </h2>
           <ul class="features__list list">
             <li class="features__item">
@@ -129,7 +123,8 @@
       <section class="products">
         <div class="container">
           <h2 class="products__title">
-            Choose Your Favorite <span>CHUẨN GU ĐÚNG VỊ</span>
+            Choose Your Favorite
+            <span class="under_title__text">CHUẨN GU ĐÚNG VỊ</span>
           </h2>
           <ul class="products__list list">
             <li class="products__item">
@@ -145,7 +140,9 @@
                 <p class="products__description">đắng, hậu ngọt, hương hoa</p>
                 <div class="products__wrapper">
                   <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">CHI TIẾT</button>
+                  <button class="products__more">
+                    <a href="">CHI TIẾT"</a>
+                  </button>
                 </div>
               </div>
             </li>
@@ -157,11 +154,15 @@
               />
               <div class="products__block">
                 <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Morning</h3>
-                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <h3 class="products__name">REVO Everyday</h3>
+                <p class="products__description">
+                  cân bằng, hậu đắng, vị chocolate
+                </p>
                 <div class="products__wrapper">
                   <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">CHI TIẾT</button>
+                  <button class="products__more">
+                    <a href="">CHI TIẾT"</a>
+                  </button>
                 </div>
               </div>
             </li>
@@ -173,11 +174,15 @@
               />
               <div class="products__block">
                 <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Morning</h3>
-                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <h3 class="products__name">REVO Origin</h3>
+                <p class="products__description">
+                  hậu ngọt, ít đắng, vị chua dâu
+                </p>
                 <div class="products__wrapper">
                   <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">CHI TIẾT</button>
+                  <button class="products__more">
+                    <a class="profuct__link" href="">CHI TIẾT"</a>
+                  </button>
                 </div>
               </div>
             </li>
@@ -189,11 +194,13 @@
               />
               <div class="products__block">
                 <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Morning</h3>
-                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
+                <h3 class="products__name">REVO Đậm Đà</h3>
+                <p class="products__description">đậm đà, đắng, truyền thống</p>
                 <div class="products__wrapper">
                   <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">CHI TIẾT</button>
+                  <button class="products__more">
+                    <a href="">CHI TIẾT"</a>
+                  </button>
                 </div>
               </div>
             </li>
@@ -203,13 +210,90 @@
 
       <!-- gifrset section -->
       <section class="giftset">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="title__text">
+            Best Gift For Best
+            <span class="under_title__text">Friend GIFTSET</span>
+          </h2>
+          <div>
+            <img src="./images/giftset/image.jpg" alt="" />
+          </div>
+          <div>
+            <p class="giftset_price">285.000</p>
+            <h3 class="giftset__title">Giftset "Cà phê phin Việt Nam"</h3>
+            <p class="giftset__discription">
+              Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo
+              cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ
+              những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người
+              làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho
+              bạn.
+            </p>
+            <div>
+              <ul class="giftset__list">
+                <li class="giftdet__item">
+                  <div class="giftset__coffee">
+                    <img src="" alt="" />
+                    <h3 class="giftset-coffe__title">
+                      Loại hạt <span class="">Fine Robusta Blend</span>
+                    </h3>
+                    <button class="giftset__gth">MUA NGAY</button>
+                  </div>
+                </li>
+
+                <li class="giftdet__item">
+                  <div class="giftset__rock">
+                    <img src="" alt="" />
+                    <h3 class="giftset-coffe__title">
+                      Độ cao <span class="rock">700 - 800m</span>
+                    </h3>
+                    <button class="giftset__more">CHI TIẾT</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="giftset__number">
+            <ul class="giftset-number__list">
+              <li class="giftset-numer__item">1</li>
+              <li class="giftset-numer__item">2</li>
+              <li class="giftset-numer__item">3</li>
+            </ul>
+          </div>
+        </div>
       </section>
+
+
+
+
+
 
       <!-- comno section -->
       <section class="combo">
-        <div class="container"></div>
+        <div class="container">
+          <h2 class="products__title">
+            Your Personalized Coffee
+            <span class="under_title__text">COMBO PHIN PHÊ</span>
+          </h2>
+          <ul>
+            <li><img src="./images/combo/img-1.jpg" alt=""></li>
+            <li><img src="./images/combo/img-2.jpg" alt=""></li>
+            <li><img src="./images/combo/img-3.jpg" alt=""></li>
+          </ul>
+
+
+
+
+
+
+        </div>
       </section>
+
+
+
+
+
+
+
     </main>
     <!-- footer -->
     <footer>
