@@ -28,6 +28,20 @@
   border: 1px solid #c7a17a;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   font-family: var(--main-fonts);
   color: var(--dark-blue-color);
@@ -191,7 +205,7 @@ summary {
   display: list-item;
 }
 
-/*# sourceMappingURL=/sm/b8ae781793ee4eb86edef3f2a2ac43a5575d063ed8cd287d7553f9f1b2776616.map */
+
 /* reset */
 a {
   text-decoration: none;
@@ -363,15 +377,6 @@ img {
 .play-btn-icon {
   position: relative;
   z-index: 100;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
 }
 
 @keyframes rotate {
@@ -564,37 +569,29 @@ img {
 }
 
 .giftset__wrap {
+  position: relative;
   display: flex;
   flex-direction: row-reverse;
 }
 
-.giftset__controls {
-  display: flex;
-  flex-direction: column;
-}
-
-.giftset__radio {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-
 .giftset__badge {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 98px;
-  background: #edf0f5;
-  mix-blend-mode: normal;
-  opacity: 0.3;
+  min-height: 154px;
   font-family: var(--secondary-fonts);
   font-weight: 900;
   font-size: 30px;
   line-height: 1.1333333333;
   color: #415167;
   text-align: center;
+  border: none;
+  background-color: #edf0f5;
+  mix-blend-mode: normal;
+  opacity: 0.3;
   transition: 400ms;
 }
-
 .giftset__badge.is-active {
   opacity: 1;
   background-color: #fff;
@@ -602,19 +599,45 @@ img {
 }
 
 .giftset__gift {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
   padding-top: 64px;
   padding-bottom: 64px;
   padding-right: 22px;
   padding-left: 324px;
   background-color: white;
+  pointer-events: none;
+}
+.giftset__gift.is-shown {
+  position: relative;
+  opacity: 1;
 }
 
-.giftset__img {
+.giftset__thumb {
+  width: 490px;
+  height: 460px;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(-55%);
+  transform: translateX(-55%) scale(0.3);
+  opacity: 0;
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  transform-origin: center;
+}
+.giftset__gift.is-shown .giftset__thumb {
+  transform: translateX(-55%) scale(1);
+  opacity: 1;
+}
+
+.giftset__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .giftset__content {
@@ -874,4 +897,78 @@ img {
   padding: 0px 14px;
   margin-left: 40px;
   margin-bottom: 41px;
+}
+
+.dropdown {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: #415167;
+  border-radius: 50%;
+}
+.dropdown-btn-icon {
+  --color7: #ffffff;
+}
+
+.dropdown-list {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 400ms;
+}
+.dropdown-list::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.dropdown-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: transform 400ms ease-in-out calc(var(--shift) * 150ms), opacity 400ms ease-in-out calc(var(--shift) * 150ms);
+}
+
+.dropdown:hover .dropdown-item {
+  opacity: 1;
+  transform: translateX(-50%) translateY(calc(-110% * var(--shift)));
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #415167;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

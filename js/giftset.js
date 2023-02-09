@@ -1,20 +1,17 @@
-const controls = document.querySelector(".giftset__wrap");
+const controls = document.querySelector(".giftset__controls");
 
 controls.addEventListener("click", (event) => {
-  if (event.target === event.currentTarget) return;
+  const currentBadge = document.querySelector(".giftset__badge.is-active");
+  const currentGiftCard = document.querySelector(".giftset__gift.is-shown");
 
-  const prevActiveBadge = document.querySelector(".giftset__badge.is-active");
+  const badgeId = event.target.getAttribute("id");
 
-  if (prevActiveBadge) {
-    prevActiveBadge.classList.remove("is-active");
-  }
-  const badgeId = event.target.getAttribute("for");
+  currentBadge.classList.remove("is-active");
+  currentGiftCard.classList.remove("is-shown");
 
-  const nextActiveBadge = document.querySelector(`[for=${badgeId}]`);
+  const nextGiftCard = document.querySelector(`[data-badge=${badgeId}]`);
+  const nextBadge = document.querySelector(`#${badgeId}`);
 
-  //   const nextActiveBadge = document.querySelector(`[data-id=${badgeId}]`);
-
-  console.log(nextActiveBadge);
-
-  nextActiveBadge.classList.add("is-active");
+  nextBadge.classList.add("is-active");
+  nextGiftCard.classList.add("is-shown");
 });
