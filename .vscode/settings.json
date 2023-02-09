@@ -1,3 +1,25 @@
 {
-    "liveServer.settings.port": 5501
+  "postcssSorting.config": {
+    "order": [
+      "custom-properties",
+      "dollar-variables",
+      "declarations",
+      "at-rules",
+      "rules"
+    ],
+    "properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "display",
+      "justify-content",
+      "align-items",
+      "width",
+      "height",
+      "padding",
+      "margin"
+    ]
+  }
 }

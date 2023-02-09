@@ -1,13 +1,38 @@
+.features__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
 .features {
   @extend %section;
 }
 
 .features__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 66px;
+  @include card-set(4, 30px);
+  text-align: center;
 }
 
-.features__item {
-  width: calc((100% - 3 * 66px) / 4);
+.features__subtitle {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #232C38;
+
+  text-align: center;
+}
+.features__title-small {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  color: #415167;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.features__description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
 }

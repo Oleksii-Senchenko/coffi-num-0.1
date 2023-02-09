@@ -1,3 +1,13 @@
 // size for one item
 // (100% - (indent * (items - 1))) / items
 //(100% -(66 * (4 - 1))) / 4
+
+@mixin card-set($items, $indent) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $indent;
+
+  [class*="__item"] {
+    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+  }
+}

@@ -1,37 +1,137 @@
 .products {
   @extend %section;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, #415167 394px, transparent 394px);
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size: contain, 1400px;
+}
+.products__sub-title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+
+  color: #415167;
+}
+.products__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: calc(34 / 30);
+  color: #415167;
+  text-align: center;
+  margin-bottom: 69px;
+}
+
+.products_container {
+  position: relative;
+}
+.products__wrapper {
+  position: relative;
 }
 .products__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  @include card-set(2, 30px);
 }
 .products__item {
-  width: calc((100% - 2 * 8px) / 4);
+  display: flex;
+  background-color: #fff;
+  // outline: 2px solid red;
+  outline-offset: -2px;
+  &:hover {
+  }
+  //ТУТ ДОЛЖНА БЫЛА БЫТЬ ТЕНЬ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.products__img {
+}
+
+.products__block {
+  flex-grow: 1;
+  padding: 42px;
+  display: flex;
+  flex-direction: column;
 }
 
 .products__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
   color: var(--accent-color);
 }
-.products__btn {
+
+.products__name {
   font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #232c38;
+  margin-bottom: 14px;
+}
+.products__description {
+  font-weight: 300;
   font-size: 16px;
   line-height: calc(22 / 16);
-  text-align: center;
-  border-radius: 19px;
-  border-color: transparent;
+  color: #151d28;
+  margin-bottom: auto;
+}
+.products__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products__btn {
+  @extend %btn;
+
   background-color: var(--accent-color);
   color: #f9fbff;
 }
-// не работает
-.products__link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(22 / 16);
+.products__more {
+  @extend %btn;
+
+  background-color: transparent;
   color: #415167;
 }
 
-
-
+// не работает
 
 // calc((100% - кіль-сть_відступів_в_рядку * довжина_одного_відступу_в_рядку) / кіль-сть_елементів_в_рядку)
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  border-radius: 50%;
+  border: none;
+  background-color: var(--accent-color);
+
+  &.prev {
+    left: -62px;
+  }
+
+  &.next {
+    right: -62px;
+  }
+
+  &.disable {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &-icon {
+    .prev & {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,3 +1,58 @@
-.combo{
-    @extend %section;
+.combo {
+  @extend %section;
+}
+.combo__list {
+  display: flex;
+}
+.combo__item {
+  margin-right: 38px;
+}
+.combo__img {
+  width: 360px;
+  height: 300px;
+  margin-bottom: 42px;
+}
+.combo__block {
+  padding-right: 42px;
+  padding-left: 41px;
+}
+
+.combo__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: #c7a17a;
+  margin-bottom: 10px;
+}
+.combo__name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: #232c38;
+  margin-bottom: 10px;
+}
+
+.combo__discription {
+}
+.combo-bye__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  text-align: center;
+  color: #f9fbff;
+  background: #c7a17a;
+  border-radius: 19px;
+  border-color: rgba(0, 0, 0, 0);
+  margin-right: 80px;
+}
+.combo-detal__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  align-items: center;
+  text-align: center;
+  color: #415167;
+  background-color: #fff;
+  border: 1px solid #c7a17a;
+  border-radius: 20px;
 }

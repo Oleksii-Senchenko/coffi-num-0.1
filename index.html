@@ -4,115 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>SweetCoffee</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,400;0,600;0,700;1,200;1,300&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    /> -->
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <title>SweetCoffee</title>
+    <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
     <!-- шапка профиля -->
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <h2>TRANG CHỦ</h2>
-          <ul class="menu__list list">
-            <li class="menu__item">
-              <a class="menu__link link" href="">COFFEE</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href=""> PHIN MẠ MÀU </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">COMBO PHIN PHÊ</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">GIFTSET</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href=""> LIÊN HỆ</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
-      <div class="container">
-        <h2 class="side_section__title">
-          YOUR <br />
-          <span class="side_section__span">PERSONALIZED</span> <br />
-          COFFEE
-        </h2>
+    <header class="header">
+      <div class="container header__section">
+        <div class="header__top">
+          <a class="header__logo" href>
+            <img
+              class="header__img"
+              src="./images/header/logo.png"
+              alt
+              width="124"
+              height="38"
+            />
+          </a>
+          <button class="header__btn" data-modal-open type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="header__bottom">
+          <h1 class="main-title">
+            YOUR
+            <span class="main-title__accent">PERSONALIZED</span>
+            COFFEE
+          </h1>
+          <nav class="nav">
+            <ul class="menu list">
+              <li class="menu__item">
+                <a class="menu__link" href>HOME</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href>Features</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href> PHIN MẠ MÀU </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href>Coffee combo</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href>GIFTSET</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href> Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="play-btn">
+          <svg class="play-btn-icon" width="22" height="22">
+            <use href="./images/icons.svg#icon-play"></use>
+          </svg>
+        </button>
       </div>
     </header>
-
     <main>
       <!-- features section -->
       <section class="features">
         <div class="container">
           <h2 class="features__title">
-            Your Personalized Coffee
-            <span class="under_title__text">COFFEE BUILD YOUR BASE</span>
+            <span class="features__title-small"> Your Personalized Coffee</span>
+            COFFEE BUILD YOUR BASE
           </h2>
           <ul class="features__list list">
             <li class="features__item">
-              <img
-                class="features__img"
-                src="./images/feature/feature-1.jpg"
-                alt=""
-              />
-              <h3 class="features__title">Nguồn gốc</h3>
+              <svg width="114" height="114">
+                <use href="./images/icons.svg#icon-feature-1"></use>
+              </svg>
+              <h3 class="features__subtitle">Source</h3>
               <p class="features__description">
-                Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn
-                quốc tế.
+                Arabica and Robusta coffee beans meet international standards.
               </p>
             </li>
 
             <li class="features__item">
-              <img
-                class="features__img"
-                src="./images/feature/feature-2.jpg"
-                alt=""
-              />
-              <h3 class="features__title">Chất lượng</h3>
+              <svg width="114" height="114">
+                <use href="./images/icons.svg#icon-feature-2"></use>
+              </svg>
+              <h3 class="features__subtitle">Quality</h3>
               <p class="features__description">
-                Từng một hạt cà phê là cả một quá trình tập trung cao độ của
-                nghệ nhân cà phê.
+                Each coffee bean is a highly concentrated process of coffee
+                artisans.
               </p>
             </li>
 
             <li class="features__item">
-              <img
-                class="features__img"
-                src="./images/feature/feature-3.jpg"
-                alt=""
-              />
-              <h3 class="features__title">Các loại hạt</h3>
+              <svg width="114" height="114">
+                <use href="./images/icons.svg#icon-feature-3"></use>
+              </svg>
+              <h3 class="features__subtitle">Coffee beans</h3>
               <p class="features__description">
-                70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green
-                bean.
+                70% of the quality of a cup of coffee comes from the origin and
+                quality of the green bean.
               </p>
             </li>
 
             <li class="features__item">
-              <img
-                class="features__img"
-                src="./images/feature/feature-4.jpg"
-                alt=""
-              />
-              <h3 class="features__title">Pha chế</h3>
+              <svg width="114" height="114">
+                <use href="./images/icons.svg#icon-feature-4"></use>
+              </svg>
+              <h3 class="features__subtitle">Bartending</h3>
               <p class="features__description">
-                Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và
-                nghiêm ngặt.
+                The coffee beans are molted through a thorough and rigorous
+                roasting process.
               </p>
             </li>
           </ul>
@@ -121,183 +127,358 @@
 
       <!-- coffee products section -->
       <section class="products">
-        <div class="container">
+        <div class="products_container container">
           <h2 class="products__title">
-            Choose Your Favorite
-            <span class="under_title__text">CHUẨN GU ĐÚNG VỊ</span>
+            <p class="products__sub-title">Choose Your Favorite</p>
+            <span class="products__title">High Standard Guarantee</span>
           </h2>
-          <ul class="products__list list">
-            <li class="products__item">
-              <img
-                class="products__img"
-                src="./images/products/image-1.jpg"
-                alt=""
-              />
+          <div class="products__wrapper">
+            <ul class="products__list list">
+              <li class="products__item">
+                <img
+                  class="products__img"
+                  src="./images/products/image-1.jpg"
+                  alt
+                />
 
-              <div class="products__block">
-                <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Morning</h3>
-                <p class="products__description">đắng, hậu ngọt, hương hoa</p>
-                <div class="products__wrapper">
-                  <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">
-                    <a href="">CHI TIẾT"</a>
-                  </button>
+                <div class="products__block">
+                  <p class="products__price">99.000</p>
+                  <h3 class="products__name">REVO Morning</h3>
+                  <p class="products__description">
+                    Bitter, sweet aftertaste, floral scent
+                  </p>
+                  <div class="products__box">
+                    <button class="products__btn">BUY NOW</button>
+                    <button class="products__more">
+                      <a href="">Detail</a>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <img
-                class="products__img"
-                src="./images/products/image-2.jpg"
-                alt=""
-              />
-              <div class="products__block">
-                <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Everyday</h3>
-                <p class="products__description">
-                  cân bằng, hậu đắng, vị chocolate
-                </p>
-                <div class="products__wrapper">
-                  <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">
-                    <a href="">CHI TIẾT"</a>
-                  </button>
+              </li>
+              <li class="products__item">
+                <img
+                  class="products__img"
+                  src="./images/products/image-2.jpg"
+                  alt
+                />
+                <div class="products__block">
+                  <p class="products__price">85.000</p>
+                  <h3 class="products__name">REVO Everyday</h3>
+                  <p class="products__description">
+                    Balance, bitter aftertaste, chocolate taste
+                  </p>
+                  <div class="products__box">
+                    <button class="products__btn">BUY NOW</button>
+                    <button class="products__more">
+                      <a href="">Detail</a>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <img
-                class="products__img"
-                src="./images/products/image-3.jpg"
-                alt=""
-              />
-              <div class="products__block">
-                <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Origin</h3>
-                <p class="products__description">
-                  hậu ngọt, ít đắng, vị chua dâu
-                </p>
-                <div class="products__wrapper">
-                  <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">
-                    <a class="profuct__link" href="">CHI TIẾT"</a>
-                  </button>
+              </li>
+              <li class="products__item">
+                <img
+                  class="products__img"
+                  src="./images/products/image-3.jpg"
+                  alt
+                />
+                <div class="products__block">
+                  <p class="products__price">139.000</p>
+                  <h3 class="products__name">REVO Origin</h3>
+                  <p class="products__description">
+                    Sweet aftertaste, less bitter, strawberry sour taste
+                  </p>
+                  <div class="products__box">
+                    <button class="products__btn">BUY NOW</button>
+                    <button class="products__more">
+                      <a class="profuct__link" href>Detail</a>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li class="products__item">
-              <img
-                class="products__img"
-                src="./images/products/image-4.jpg"
-                alt=""
-              />
-              <div class="products__block">
-                <p class="products__price">99.000</p>
-                <h3 class="products__name">REVO Đậm Đà</h3>
-                <p class="products__description">đậm đà, đắng, truyền thống</p>
-                <div class="products__wrapper">
-                  <button class="products__btn">MUA NGAY</button>
-                  <button class="products__more">
-                    <a href="">CHI TIẾT"</a>
-                  </button>
+              </li>
+              <li class="products__item">
+                <img
+                  class="products__img"
+                  src="./images/products/image-4.jpg"
+                  alt
+                />
+                <div class="products__block">
+                  <p class="products__price">75.000</p>
+                  <h3 class="products__name">REVO Đậm Đà</h3>
+                  <p class="products__description">Bold, bitter, traditional</p>
+                  <div class="products__box">
+                    <button class="products__btn">BUY NOW</button>
+                    <button class="products__more">
+                      <a href="">Detail</a>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+
+            <button class="slider-btn prev disable">
+              <svg class="slider-btn-icon" width="24" height="17">
+                <use href="./images/icons.svg#icon-right-arrow"></use>
+              </svg>
+            </button>
+            <button class="slider-btn next">
+              <svg class="slider-btn-icon" width="24" height="17">
+                <use href="./images/icons.svg#icon-right-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- gifrset section -->
       <section class="giftset">
         <div class="container">
-          <h2 class="title__text">
-            Best Gift For Best
-            <span class="under_title__text">Friend GIFTSET</span>
-          </h2>
-          <div>
-            <img src="./images/giftset/image.jpg" alt="" />
-          </div>
-          <div>
-            <p class="giftset_price">285.000</p>
-            <h3 class="giftset__title">Giftset "Cà phê phin Việt Nam"</h3>
-            <p class="giftset__discription">
-              Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo
-              cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ
-              những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người
-              làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho
-              bạn.
-            </p>
-            <div>
-              <ul class="giftset__list">
-                <li class="giftdet__item">
-                  <div class="giftset__coffee">
-                    <img src="" alt="" />
-                    <h3 class="giftset-coffe__title">
-                      Loại hạt <span class="">Fine Robusta Blend</span>
-                    </h3>
-                    <button class="giftset__gth">MUA NGAY</button>
-                  </div>
-                </li>
-
-                <li class="giftdet__item">
-                  <div class="giftset__rock">
-                    <img src="" alt="" />
-                    <h3 class="giftset-coffe__title">
-                      Độ cao <span class="rock">700 - 800m</span>
-                    </h3>
-                    <button class="giftset__more">CHI TIẾT</button>
-                  </div>
-                </li>
-              </ul>
+          <p class="products__sub-title">Best Gift For Best Friend</p>
+          <h2 class="products__title">GIFTSET</h2>
+          <div class="giftset__wrap">
+            <div class="giftset__controls">
+              <input
+                class="giftset__radio"
+                type="radio"
+                name="user_gifts"
+                id="user_gift-1"
+                checked
+              />
+              <label class="giftset__badge is-active" for="user_gift-1">
+                1
+              </label>
+              <input
+                class="giftset__radio"
+                type="radio"
+                name="user_gifts"
+                id="user_gift-2"
+              />
+              <label class="giftset__badge" for="user_gift-2"> 2 </label>
+              <input
+                class="giftset__radio"
+                type="radio"
+                name="user_gifts"
+                id="user_gift-3"
+              />
+              <label class="giftset__badge" for="user_gift-3"> 3 </label>
             </div>
-          </div>
-          <div class="giftset__number">
-            <ul class="giftset-number__list">
-              <li class="giftset-numer__item">1</li>
-              <li class="giftset-numer__item">2</li>
-              <li class="giftset-numer__item">3</li>
-            </ul>
+            <article class="giftset__gift" data-id="user_gift-1">
+              <img
+                class="giftset__img"
+                src="./images/giftset/image.png"
+                alt=""
+              />
+              <div class="giftset__content">
+                <p class="giftset__price">285.000</p>
+                <h3 class="giftset__name-product">
+                  Giftset "Cà phê phin Việt Nam"
+                </h3>
+                <p class="giftset__discription">
+                  Great gift for coffee connoisseurs. Coffee beans are carefully
+                  selected by Revo, roasted and ground according to the
+                  technology and know-how learned from famous artisans, along
+                  with the love and passion of coffee makers creating pure cups
+                  of coffee only exclusively for you.
+                </p>
+                <ul class="giftset__list">
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-coffee-beans"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Type of coffee bean:
+                      <span class="giftset__next-element">
+                        Fine Robusta Blend
+                      </span>
+                    </p>
+                  </li>
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-mountain"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Altitude:
+                      <span class="giftset__next-element">700 - 800m</span>
+                    </p>
+                  </li>
+                </ul>
+                <button class="giftset__btn">BUY NOW</button>
+                <button class="giftset__more">Detail</button>
+              </div>
+            </article>
+            <article class="giftset__gift" data-id="user_gift-2">
+              <img
+                class="giftset__img"
+                src="./images/giftset/image.png"
+                alt=""
+              />
+              <div class="giftset__content">
+                <p class="giftset__price">285.000</p>
+                <h3 class="giftset__name-product">
+                  Giftset "Cà phê phin Việt Nam"
+                </h3>
+                <p class="giftset__discription">
+                  Great gift for coffee connoisseurs. Coffee beans are carefully
+                  selected by Revo, roasted and ground according to the
+                  technology and know-how learned from famous artisans, along
+                  with the love and passion of coffee makers creating pure cups
+                  of coffee only exclusively for you.
+                </p>
+                <ul class="giftset__list">
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-coffee-beans"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Type of coffee bean:
+                      <span class="giftset__next-element">
+                        Fine Robusta Blend
+                      </span>
+                    </p>
+                  </li>
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-mountain"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Altitude:
+                      <span class="giftset__next-element">700 - 800m</span>
+                    </p>
+                  </li>
+                </ul>
+                <button class="giftset__btn">BUY NOW</button>
+                <button class="giftset__more">Detail</button>
+              </div>
+            </article>
+            <article class="giftset__gift" data-id="user_gift-3">
+              <img
+                class="giftset__img"
+                src="./images/giftset/image.png"
+                alt=""
+              />
+              <div class="giftset__content">
+                <p class="giftset__price">285.000</p>
+                <h3 class="giftset__name-product">
+                  Giftset "Cà phê phin Việt Nam"
+                </h3>
+                <p class="giftset__discription">
+                  Great gift for coffee connoisseurs. Coffee beans are carefully
+                  selected by Revo, roasted and ground according to the
+                  technology and know-how learned from famous artisans, along
+                  with the love and passion of coffee makers creating pure cups
+                  of coffee only exclusively for you.
+                </p>
+                <ul class="giftset__list">
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-coffee-beans"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Type of coffee bean:
+                      <span class="giftset__next-element">
+                        Fine Robusta Blend
+                      </span>
+                    </p>
+                  </li>
+                  <li class="giftset__item">
+                    <svg class="giftset__icon">
+                      <use href="./images/icons.svg#icon-mountain"></use>
+                    </svg>
+                    <p class="giftset__info">
+                      Altitude:
+                      <span class="giftset__next-element">700 - 800m</span>
+                    </p>
+                  </li>
+                </ul>
+                <button class="giftset__btn">BUY NOW</button>
+                <button class="giftset__more">Detail</button>
+              </div>
+            </article>
           </div>
         </div>
       </section>
-
-
-
-
-
 
       <!-- comno section -->
       <section class="combo">
         <div class="container">
-          <h2 class="products__title">
+          <h2 class="">
             Your Personalized Coffee
             <span class="under_title__text">COMBO PHIN PHÊ</span>
           </h2>
-          <ul>
-            <li><img src="./images/combo/img-1.jpg" alt=""></li>
-            <li><img src="./images/combo/img-2.jpg" alt=""></li>
-            <li><img src="./images/combo/img-3.jpg" alt=""></li>
+          <ul class="combo__list">
+            <li class="combo__item">
+              <img class="combo__img" src="./images/combo/img-1.jpg" alt />
+              <div class="combo__block">
+                <p class="combo__price">147.000</p>
+                <h3 class="combo__name">Combo Revo Đậm Đà</h3>
+                <p class="combo__discription">
+                  The caffeine content in Revo Bold is strong enough to keep you
+                  awake to work...
+                </p>
+                <button class="combo-bye__btn" type="button">BUY NOW</button>
+                <button class="combo-detal__btn" type="button">Details</button>
+              </div>
+            </li>
+            <li class="combo__item">
+              <img class="combo__img" src="./images/combo/img-2.jpg" alt />
+              <div class="combo__block">
+                <p class="combo__price">156.000</p>
+                <h3 class="combo__name">Combo Revo Everyday</h3>
+                <p class="combo__discription">
+                  Revo Everyday is a blend of the bitter taste of Robusta beans
+                  and the aroma of...
+                </p>
+                <button class="combo-bye__btn" type="button">BUY NOW</button>
+                <button class="combo-detal__btn" type="button">Details</button>
+              </div>
+            </li>
+            <li class="combo__item">
+              <img class="combo__img" src="./images/combo/img-3.jpg" alt />
+              <div class="combo__block">
+                <p class="combo__price">275.000</p>
+                <h3 class="combo__name">Combo Revo Honey</h3>
+                <p class="combo__discription">
+                  Honey - in the name Revo Honey comes from the processing
+                  method of Arabica beans...
+                </p>
+                <button class="combo-bye__btn" type="button">BUY NOW</button>
+                <button class="combo-detal__btn" type="button">Details</button>
+              </div>
+            </li>
           </ul>
-
-
-
-
-
-
         </div>
       </section>
-
-
-
-
-
-
-
     </main>
     <!-- footer -->
     <footer>
       <div class="container"></div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="close-btn__icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal__thumb">
+          <img
+            class="modal__img"
+            src="./images/modal/pic.jpg"
+            alt="Превьюшка модалки"
+          />
+        </div>
+        <p class="modal__data"><time datetime="12/12/2020">20/20/2020</time></p>
+        <h2 class="modal__title">Motivation Is The First Step To Success</h2>
+        <p class="modal__discription">
+          Knowing yourself is the first, and a very critical step in the process
+          of planning your future. How can you figure out what you want to do
+          with your life if you don&#39;t know: What am I going to do with the
+          rest of my life? What is my dream job? What do I enjoy doing?
+          What&#39;s my passion? What kind of career fits my personality?
+        </p>
+        <p class="modal__mark">Culture</p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/giftset.js"></script>
   </body>
 </html>
